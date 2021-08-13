@@ -10,7 +10,7 @@ import utils
 hand_able = True
 np = 0
 
-os.system('cls')
+utils.clear()
 
 play = classes.Game()
 
@@ -32,7 +32,7 @@ while True:
 
     header.header()
     inp2 = input('Click enter to play.')
-    os.system('cls')
+    utils.clear()
 
 
     # BEGIN OF GAME LOOP
@@ -87,7 +87,7 @@ while True:
                 tile = utils.play_tile(positions[play.active_position], ends)
                 
                 # where do you want to drop it? left or right? - in case this is possible
-                os.system('cls')
+                utils.clear()
                 #print('------------------------------------------------------------------------')    
                     
             else:
@@ -95,7 +95,7 @@ while True:
                 print(f'{positions[play.active_position]} plays {tile}')
                 inp3 = input('Press enter to continue.')
 
-                os.system('cls')
+                utils.clear()
         
             # Remove Tile from Hand
             positions[play.active_position].hand.remove(tile)
@@ -114,7 +114,7 @@ while True:
                 utils.add_won_game(positions[play.active_position])
                 print(f'The Winner of the Round is {positions[play.active_position]}!\n')   
                 inp3 = input('Press enter if you want to continue')
-                os.system('cls')
+                utils.clear()
     
         else:
             print(f'{positions[play.active_position].name} has no tile to play...')
@@ -125,10 +125,10 @@ while True:
                 utils.add_won_game(winner)
                 #print(classes.p1.hand, classes.p2.hand, classes.p3.hand, classes.p4.hand)
                 inp3 = input('Press enter to continue')
-                os.system('cls')
+                utils.clear()
                 break
             inp3 = input('Press enter to continue')
-            os.system('cls')
+            utils.clear()
 
     header.header()
     print('|                S C O R E B O A R D                |')
@@ -145,7 +145,7 @@ while True:
     inp_cont = input('Do you want to continue? y or n: ')
     if inp_cont == 'n':
         break
-    os.system('cls')    
+    utils.clear()   
 
 
 
