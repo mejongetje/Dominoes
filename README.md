@@ -11,4 +11,4 @@ update for linux terminals
 
 comments are welcome
 
-![Alt text]( "Optional title")
+![Alt text](https://github.com/mejongetje/Dominoes/blob/main/play.png "Play")
