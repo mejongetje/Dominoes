@@ -122,6 +122,13 @@ def calc_spots(players):
 
 def add_won_game(winner):
     winner.games_won += 1
+    
+    
+def clear():  
+    if name == 'nt':
+        system('cls') 
+    else:
+        system('clear')
 
 
 
