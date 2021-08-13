@@ -1,5 +1,6 @@
 import itertools
 
+from os import name, system
 from copy import deepcopy
 
 
