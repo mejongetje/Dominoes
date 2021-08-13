@@ -10,5 +10,3 @@ it's the cut throat version of the game
 update for linux terminals
 
 comments are welcome
-
-![Alt text](https://github.com/mejongetje/Dominoes/blob/main/play.png "Play")
